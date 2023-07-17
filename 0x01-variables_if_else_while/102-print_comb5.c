@@ -28,7 +28,7 @@ int main(void)
 				putchar(c + '0');
 				putchar(d + '0');
 
-				if (!(a == '9' && b == '8'))
+				if (!(a == 9 && b == 8))
 				{
 					putchar(44);
 					putchar(32);
