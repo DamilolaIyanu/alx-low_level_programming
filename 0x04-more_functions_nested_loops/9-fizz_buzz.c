@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *main: Fizzbuzz game to determine multiples of 3 and 5.
- *
+ *main - Fizzbuzz game to determine multiples of 3 and 5.
+ *Fizzbuzz is like a game to detect which number is divisible
+ *by 3, 5 or both.
  *Return: Always (0)
  *
  *
