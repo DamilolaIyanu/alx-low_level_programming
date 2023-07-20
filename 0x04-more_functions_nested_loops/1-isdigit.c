@@ -8,17 +8,12 @@
  */
 int _isdigit(int c)
 {
-	char i;
-
-	int digit = 1;
-
-	for (i = 'a'; i <= 'z'; i++)
+	if (c >= 48 && c <= 57)
 	{
-		if (i == c)
-		{
-			digit = 0;
-			return (0);
-		}
+		return (1);
 	}
-	return (digit);
+	else
+	{
+		return (0);
+	}
 }
