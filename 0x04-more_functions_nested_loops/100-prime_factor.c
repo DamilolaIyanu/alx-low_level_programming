@@ -8,9 +8,7 @@
  */
 int main(void)
 {
-	int a;
-
-	long int i, j = 612852475143;
+	long int a, i, j = 612852475143;
 
 	for (i = 1; i <= j; i++)
 	{
