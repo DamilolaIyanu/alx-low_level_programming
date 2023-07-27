@@ -13,16 +13,12 @@
 int _strcmp(char *s1, char *s2)
 {
 	int none = 0;
+	int i;
 
-	while (*s1 != '\0' && *s2 != '\0')
-	if (*s1 != *s2)
+	for (i = 0; s1[i] != '\0' && none == 0; i++)
 	{
-		return (*s1 - *s2);
+		none = s1[i] - s2[i];
 
 	}
-	else
-	{
-		return (none);
-	}
-	return (0);
+	return (none);
 }
