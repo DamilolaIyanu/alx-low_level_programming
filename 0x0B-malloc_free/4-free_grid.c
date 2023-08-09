@@ -5,7 +5,7 @@
  *free_grid - free two dimensional array
  *@grid:the array
  *@height: the height
- *Return: Returns nothing
+ *Return: no return
  */
 
 void free_grid(int **grid, int height)
