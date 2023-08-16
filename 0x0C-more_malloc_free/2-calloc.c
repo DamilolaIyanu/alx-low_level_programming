@@ -5,7 +5,7 @@
  *_calloc - allocates memory for an array
  *@nmemb: one of the grid
  *@size: The size of the grid
- *@Return: Return pointer to the allocated memory
+ *Return: Return pointer to the allocated memory
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	ptr = malloc(size * nmemb);
 	if (ptr == NULL)
 		return (NULL);
-	for (i = 0; i < (nmemb * size); i++)
+	for (i = 0; i < (size * nmemb); i++)
 		ptr[i] = 0;
-	return(ptr);
+	return (ptr);
 }
