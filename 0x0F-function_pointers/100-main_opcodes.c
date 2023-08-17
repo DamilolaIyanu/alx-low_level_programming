@@ -44,5 +44,6 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	print_opcode((char *)&main, n);
+	return (0);
 }
 
