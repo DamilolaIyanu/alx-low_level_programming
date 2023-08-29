@@ -7,7 +7,6 @@
  *@n: the data in the newNode
  *Return: Returns the newNode
  */
-
 listint_t *makeNode(const int n)
 {
 	listint_t *newNode;
@@ -15,7 +14,7 @@ listint_t *makeNode(const int n)
 	newNode = (listint_t *)malloc(sizeof(listint_t));
 
 	if (newNode == NULL)
-		return (0);
+		return (NULL);
 
 	newNode->n = n;
 	newNode->next = NULL;
