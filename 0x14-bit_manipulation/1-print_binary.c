@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 
 	while (setBit > 0)
 	{
-		if ((n &setBit) || start)
+		if ((n & setBit) || start)
 		{
 			_putchar((n & setBit) ? '1' : '0');
 			start = 1;
