@@ -1,19 +1,13 @@
 section .data
-    hello db "Hello, Holberton", 0
-    newline db 10  ; ASCII code for newline
+   format db "Hello, Holberton",10,0
 
 section .text
     global main
-    extern printf
+
+extern printf
 
 main:
-    push rbp
-    mov rdi, hello
+    push format
     call printf
-
-    ; Print a newline
-    mov rdi, newline
-    call printf
-
-    pop rbp
+    add rsp, 8
     ret
