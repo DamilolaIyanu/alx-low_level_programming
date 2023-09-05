@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <sys/types.h>
-
+#include <sys/stat.h>
 
 #define BUFFER_SIZE 1024
 
@@ -88,4 +88,5 @@ int copy_file(const char *file_from, const char *file_to)
 	{
 		error_handler("Error: Can't close file descriptor", 100);
 	}
+	return (0);
 }
